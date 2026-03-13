@@ -1,0 +1,47 @@
+# 🚀 DevOps 90 天学习进度跟踪
+
+- [x] Day-01：制定 DevOps 90 天个人学习计划，明确目标与路线。
+- [x] Day-02：深入理解 Linux 架构、进程管理与 systemd 核心。
+- [x] Day-03：整理 Linux 常用命令速查表，涵盖进程、文件与网络。
+- [x] Day-04：动手实践 Linux 进程、服务与日志检查命令。
+- [ ] Day-05：进行 Linux CPU、内存与日志的故障排查实战演练。
+- [ ] Day-06：练习 Linux 基础文件读写操作与重定向。
+- [ ] Day-07：掌握 Linux 文件系统层级结构并进行场景化排障练习。
+- [ ] Day-08：在云服务器上部署 Nginx Web 服务并提取日志。
+- [ ] Day-09：进行 Linux 用户与用户组管理的综合挑战练习。
+- [ ] Day-10：掌握 Linux 文件权限（chmod）与基本文件操作。
+- [ ] Day-11：理解 Bash Shell 脚本基础与变量。
+- [ ] Day-12：掌握 Bash 逻辑判断与循环控制。
+- [ ] Day-13：学习 Bash 数组与函数。
+- [ ] Day-14：进行 Bash 自动化脚本综合实战。
+- [ ] Day-15：Git 基础：版本控制入门与核心命令。
+- [ ] Day-16：Git 分支管理与冲突解决。
+- [ ] Day-17：GitHub 协作：Pull Request 与 Workflow。
+- [ ] Day-18：Docker 基础：镜像与容器概念。
+- [ ] Day-19：Docker 实战：Dockerfile 编写与镜像构建。
+- [ ] Day-20：Docker Compose：多容器应用编排。
+- [ ] Day-21：网络基础：OSI 模型与 TCP/IP 协议。
+- [ ] Day-22：DNS、HTTP 与常用网络诊断工具。
+- [ ] Day-23：AWS 核心：EC2、S3 与 IAM 基础。
+- [ ] Day-24：AWS 网络：VPC 基础与配置。
+- [ ] Day-25：CI/CD 概念与 Jenkins 环境搭建。
+- [ ] Day-26：Jenkins Pipeline 实战：构建与部署。
+- [ ] Day-27：GitHub Actions 入门与自动化流水线。
+- [ ] Day-28：Terraform 基础：IaC 概念与 Provider 配置。
+- [ ] Day-29：Terraform 实战：管理云资源。
+- [ ] Day-30：Ansible 基础：Inventory 与 Ad-hoc 命令。
+- [ ] Day-31：Ansible Playbook 实战：配置管理。
+- [ ] Day-32：Kubernetes 核心概念与集群架构。
+- [ ] Day-33：K8s 对象：Pods, Deployments 与 Services。
+- [ ] Day-34：K8s 存储与配置：ConfigMaps 与 Secrets。
+- [ ] Day-35：监控基础：Prometheus 核心架构。
+- [ ] Day-36：可视化实战：Grafana 面板配置。
+- [ ] Day-37：ELK Stack：日志采集与分析基础。
+- [ ] Day-38：DevSecOps 入门：容器与代码安全扫描。
+- [ ] Day-39：Python 基础：DevOps 工程师的 Python 脚本。
+- [ ] Day-40：Python 实战：调用 API 进行自动化。
+- [ ] Day-41：项目实战：构建端到端 CI/CD 流水线。
+- [ ] Day-42：项目实战：容器化应用在 K8s 上的部署与伸缩。
+- [ ] Day-43：DevOps 面试模拟：Linux 与网络篇。
+- [ ] Day-44：DevOps 面试模拟：CI/CD 与 K8s 篇。
+- [ ] Day-45：90 天复盘与职业发展建议。
