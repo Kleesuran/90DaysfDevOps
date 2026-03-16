@@ -1,51 +1,51 @@
 # 🚀 DevOps 90 天学习进度跟踪
 
-- [x] Day-01：制定 DevOps 90 天个人学习计划，明确目标与路线。
-- [x] Day-02：深入理解 Linux 架构、进程管理与 systemd 核心。
-- [x] Day-03：整理 Linux 常用命令速查表，涵盖进程、文件与网络。
-- [x] Day-04：动手实践 Linux 进程、服务与日志检查命令。
-- [x] Day-05：进行 Linux CPU、内存与日志的故障排查实战演练。
-- [x] Day-06：练习 Linux 基础文件读写操作与重定向。
-- [x] Day-07：掌握 Linux 文件系统层级结构并进行场景化排障练习。
-- [ ] Day-08：在云服务器上部署 Nginx Web 服务并提取日志。
-- [ ] Day-09：进行 Linux 用户与用户组管理的综合挑战练习。
-- [ ] Day-10：掌握 Linux 文件权限（chmod）与基本文件操作。
-- [ ] Day-11：理解 Bash Shell 脚本基础与变量。
-- [ ] Day-12：掌握 Bash 逻辑判断与循环控制。
-- [ ] Day-13：学习 Bash 数组与函数。
-- [ ] Day-14：进行 Bash 自动化脚本综合实战。
-- [ ] Day-15：Git 基础：版本控制入门与核心命令。
-- [ ] Day-16：Git 分支管理与冲突解决。
-- [ ] Day-17：GitHub 协作：Pull Request 与 Workflow。
-- [ ] Day-18：Docker 基础：镜像与容器概念。
-- [ ] Day-19：Docker 实战：Dockerfile 编写 with 镜像构建。
-- [ ] Day-20：Docker Compose：多容器应用编排。
-- [ ] Day-21：网络基础：OSI 模型与 TCP/IP 协议。
-- [ ] Day-22：DNS、HTTP 与常用网络诊断工具。
-- [ ] Day-23：AWS 核心：EC2、S3 与 IAM 基础。
-- [ ] Day-24：AWS 网络：VPC 基础与配置。
-- [ ] Day-25：CI/CD 概念与 Jenkins 环境搭建。
-- [ ] Day-26：Jenkins Pipeline 实战：构建与部署。
-- [ ] Day-27：GitHub Actions 入门与自动化流水线。
-- [ ] Day-28：Terraform 基础：IaC 概念与 Provider 配置。
-- [ ] Day-29：Terraform 实战：管理云资源。
-- [ ] Day-30：Ansible 基础：Inventory 与 Ad-hoc 命令。
-- [ ] Day-31：Dockerfile 实战：编写高效的 Dockerfile 并构建自定义镜像。
-- [ ] Day-32：掌握 Docker 卷（Volumes）与网络（Networking）实现数据持久化与容器通信。
-- [ ] Day-33：Docker Compose 基础：使用 YAML 文件编排多容器应用。
-- [ ] Day-34：Docker Compose 进阶：处理健康检查、重启策略与服务依赖。
-- [ ] Day-35：多阶段构建与 Docker Hub：优化镜像体积并进行全球分发。
-- [ ] Day-36：Docker 项目实战：将一个完整的多层应用端到端容器化。
-- [ ] Day-37：Docker 知识复习与速查表制作：巩固容器化核心技能。
-- [ ] Day-38：YAML 基础：深入理解 DevOps 中最常用的配置文件语言语法。
-- [ ] Day-39：CI/CD 核心概念：理解持续集成、持续交付与持续部署的原理与区别。
-- [ ] Day-40：GitHub Actions 入门：编写并运行你的第一个自动化工作流。
-- [ ] Day-41：掌握 GitHub Actions 触发器（Triggers）与矩阵构建（Matrix Builds）。
-- [ ] Day-42：理解 GitHub Actions 运行器（Runners）：托管运行器与自托管运行器的配置与使用。
-- [ ] Day-43：GitHub Actions 进阶：掌握作业（Jobs）、步骤（Steps）、环境变量与条件判断。
-- [ ] Day-44：GitHub Actions 实战：管理机密（Secrets）、构建产物（Artifacts）与自动化测试。
-- [ ] Day-45：在 GitHub Actions 中实现 Docker 镜像的自动化构建与推送至 Docker Hub。
-- [ ] Day-46：掌握 GitHub Actions 可重用工作流（Reusable Workflows）与复合操作（Composite Actions）。
-- [ ] Day-47：深入高级触发器：PR 事件、Cron 定时任务与事件驱动的自动化流水线。
-- [ ] Day-48：GitHub Actions 综合项目：构建从代码到部署的完整端到端 CI/CD 流水线。
-- [ ] Day-49：DevSecOps 实战：在流水线中集成 Trivy 镜像扫描与依赖安全性检查。
+- [x] Day-01：制定 DevOps 90 天个人学习计划，明确目标与职业执行蓝图。
+- [x] Day-02：深入 Linux 架构：理解内核、用户空间、进程管理与 systemd 核心。
+- [x] Day-03：Linux 常用命令实践：构建涵盖进程、文件系统与网络的个人速查表。
+- [x] Day-04：Linux 实战：动手练习进程监控（ps/top）、服务管理与 journalctl 日志分析。
+- [x] Day-05：故障排查演练：编写标准化的 CPU、内存、磁盘与日志排障运行手册（Runbook）。
+- [x] Day-06：Linux 文件 IO 基础：掌握覆盖/追加重定向、管道符与 tee 命令的魔法。
+- [x] Day-07：文件系统层级结构（FHS）：深入理解 Linux 目录职能并进行场景化故障排查。
+- [ ] Day-08：云端部署实战：在 AWS/Utho 云服务器上通过 SSH 部署并配置 Nginx Web 服务。
+- [ ] Day-09：用户与用户组管理挑战：实战多用户创建、权限分配与团队共享目录配置。
+- [ ] Day-10：文件权限与操作进阶：深度掌握 chmod、chown 及基本文件处理技巧。
+- [ ] Day-11：文件所有权深度挑战：递归管理（chown -R）与复杂环境下的所有权审计。
+- [ ] Day-12：第一阶段复盘：巩固 Linux 基础、进程管理、权限与用户管理的阶段性知识。
+- [ ] Day-13：Linux 逻辑卷管理（LVM）：实战物理卷、卷组与逻辑卷的创建、挂载与动态扩容。
+- [ ] Day-14：网络基础实战：深入 OSI/TCP-IP 模型，使用 ping、ss、dig 进行网络连通性诊断。
+- [ ] Day-15：网络进阶：理解 DNS 解析原理、CIDR 子网划分以及常用服务端口协议。
+- [ ] Day-16：Shell 脚本入门：掌握 Shebang、变量定义、用户输入（read）与基础逻辑判断。
+- [ ] Day-17：脚本逻辑控制：实战 For/While 循环、位置参数处理与基础错误处理（set -e）。
+- [ ] Day-18：高效脚本编写：掌握 Shell 函数、局部变量与工业级安全规范（set -euo pipefail）。
+- [ ] Day-19：自动化项目：编写日志轮转与服务器备份脚本，并通过 Crontab 实现定时任务。
+- [ ] Day-20：Bash 综合挑战：开发一个自动化的日志分析器与每日运行状态报告生成器。
+- [ ] Day-21：脚本专家之路：整理个人 Shell 脚本高级速查表，涵盖文本处理与调试技巧。
+- [ ] Day-22：Git 版本控制基础：初始化仓库、理解暂存区概念并管理本地代码历史。
+- [ ] Day-23：Git 分支管理与协作：实战分支创建、切换、推送远程仓库及 Fork/Clone 区别。
+- [ ] Day-24：Git 进阶操作：掌握 Merge、Rebase、Stash 暂存与 Cherry-pick 择优挑选。
+- [ ] Day-25：Git 撤销与策略：深入理解 Reset/Revert 区别，学习 GitFlow 等企业级分支模型。
+- [ ] Day-26：GitHub CLI（gh）：使用命令行工具高效管理 Pull Request、Issues 与代码库。
+- [ ] Day-27：开发者品牌建设：打磨 GitHub Profile 个人主页，优化仓库组织与项目文档。
+- [ ] Day-28：第二阶段复盘：全面复习 Linux 网络、LVM、Shell 脚本编程与 Git 协作体系。
+- [ ] Day-29：Docker 容器化初探：理解容器 vs 虚拟机差异，运行并探索你的第一个镜像。
+- [ ] Day-30：容器生命周期管理：深入镜像分层（Layers）原理，掌握容器全生命周期控制。
+- [ ] Day-31：Dockerfile 实战：编写高效镜像构建文件，掌握常用指令与构建缓存优化。
+- [ ] Day-32：容器持久化与网络：实战 Docker Volumes 数据持久化与自定义网络通信。
+- [ ] Day-33：Docker Compose 基础：使用 YAML 编排多容器应用，实现服务一键启动。
+- [ ] Day-34：生产级 Compose 配置：处理健康检查（Healthchecks）、重启策略与服务依赖。
+- [ ] Day-35：镜像优化与分发：掌握 Docker 多阶段构建（Multi-Stage）并将镜像发布至 Docker Hub。
+- [ ] Day-36：容器化项目实战：端到端 Dockerize 一个包含数据库、缓存与前端的完整应用。
+- [ ] Day-37：容器化深度复盘：总结 Docker 核心指令，制作个人容器化技术速查手册。
+- [ ] Day-38：YAML 语言基础：深入理解 DevOps 配置文件语法，为 CI/CD 自动化打好基础。
+- [ ] Day-39：CI/CD 核心理念：解析持续集成/交付/部署的概念模型与标准流水线架构。
+- [ ] Day-40：GitHub Actions 入门：编写你的第一个 .github/workflows 自动化任务。
+- [ ] Day-41：工作流触发与矩阵构建：掌握多样化触发事件，利用 Matrix 构建跨平台测试。
+- [ ] Day-42：Runner 深度解析：理解 GitHub 托管运行器与自托管运行器的配置与安全。
+- [ ] Day-43：流程控制与环境管理：实战 Job 依赖、Step 条件判断与环境变量层级控制。
+- [ ] Day-44：机密与产物管理：安全使用 GitHub Secrets，实现跨 Job 的产物（Artifacts）共享。
+- [ ] Day-45：自动化构建闭环：实现“代码提交即构建 Docker 并自动推送镜像”的 CI 闭环。
+- [ ] Day-46：可重用工作流：通过 Reusable Workflows 与 Composite Actions 实现流水线代码复用。
+- [ ] Day-47：高级事件驱动：深入 PR 生命周期事件、Cron 定时任务与事件驱动型流水线。
+- [ ] Day-48：CI/CD 综合大项目：构建从代码测试、镜像构建到多环境部署的端到端完整流水线。
+- [ ] Day-49：DevSecOps 安全集成：在流水线中集成 Trivy 镜像扫描与依赖库安全性审计。
