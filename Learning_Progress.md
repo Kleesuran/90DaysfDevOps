@@ -4,9 +4,9 @@
 - [x] Day-02：深入理解 Linux 架构、进程管理与 systemd 核心。
 - [x] Day-03：整理 Linux 常用命令速查表，涵盖进程、文件与网络。
 - [x] Day-04：动手实践 Linux 进程、服务与日志检查命令。
-- [ ] Day-05：进行 Linux CPU、内存与日志的故障排查实战演练。
-- [ ] Day-06：练习 Linux 基础文件读写操作与重定向。
-- [ ] Day-07：掌握 Linux 文件系统层级结构并进行场景化排障练习。
+- [x] Day-05：进行 Linux CPU、内存与日志的故障排查实战演练。
+- [x] Day-06：练习 Linux 基础文件读写操作与重定向。
+- [x] Day-07：掌握 Linux 文件系统层级结构并进行场景化排障练习。
 - [ ] Day-08：在云服务器上部署 Nginx Web 服务并提取日志。
 - [ ] Day-09：进行 Linux 用户与用户组管理的综合挑战练习。
 - [ ] Day-10：掌握 Linux 文件权限（chmod）与基本文件操作。
@@ -18,7 +18,7 @@
 - [ ] Day-16：Git 分支管理与冲突解决。
 - [ ] Day-17：GitHub 协作：Pull Request 与 Workflow。
 - [ ] Day-18：Docker 基础：镜像与容器概念。
-- [ ] Day-19：Docker 实战：Dockerfile 编写与镜像构建。
+- [ ] Day-19：Docker 实战：Dockerfile 编写 with 镜像构建。
 - [ ] Day-20：Docker Compose：多容器应用编排。
 - [ ] Day-21：网络基础：OSI 模型与 TCP/IP 协议。
 - [ ] Day-22：DNS、HTTP 与常用网络诊断工具。
@@ -45,3 +45,7 @@
 - [ ] Day-43：DevOps 面试模拟：Linux 与网络篇。
 - [ ] Day-44：DevOps 面试模拟：CI/CD 与 K8s 篇。
 - [ ] Day-45：90 天复盘与职业发展建议。
+- [ ] Day-46：掌握 GitHub Actions 可重用工作流与复合操作。
+- [ ] Day-47：深入高级触发器：PR 事件、Cron 定时任务与事件驱动流水线。
+- [ ] Day-48：GitHub Actions 项目实战：构建端到端 CI/CD 流水线。
+- [ ] Day-49：DevSecOps 实战：在流水线中集成 Trivy 镜像扫描与安全性检查。
