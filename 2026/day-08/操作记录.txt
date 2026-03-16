@@ -1,0 +1,735 @@
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws --version
+aws-cli/1.44.39 Python/3.14.3 Linux/6.19.8-zen1-1-zen botocore/1.42.49
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws configure list
+      Name                    Value             Type    Location
+      ----                    -----             ----    --------
+   profile                <not set>             None    None
+access_key     ****************F77P shared-credentials-file
+secret_key     ****************Uxs5 shared-credentials-file
+    region           ap-northeast-1      config-file    ~/.aws/config
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws sts get-caller-identity
+{
+    "UserId": "AIDARCHIKTOOAKQN3FKUX",
+    "Account": "073501678492",
+    "Arn": "arn:aws:iam::073501678492:user/musync"
+}
+󰪢 6s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,State.Name]' --output table
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws service-quotas get-service-quota --service-code ec2 --quota-code L-1216C491
+
+An error occurred (NoSuchResourceException) when calling the GetServiceQuota operation: The request failed because the specified quota and service do not exist.
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    terraform -v
+fish: 未知的命令：terraform
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    sudo pacman -S terraform
+[sudo] klee 的密码：
+正在解析依赖关系...
+正在查找软件包冲突...
+
+软件包 (1) terraform-1.14.7-1
+
+下载大小：      21.41 MiB
+全部安装大小：  97.54 MiB
+
+:: 进行安装吗？ [Y/n]
+:: 正在获取软件包......
+ terraform-1.14.7-1-x86_64       21.4 MiB  23.2 MiB/s 00:01 [################################] 100%
+(1/1) 正在检查密钥环里的密钥                                [################################] 100%
+(1/1) 正在检查软件包完整性                                  [################################] 100%
+(1/1) 正在加载软件包文件                                    [################################] 100%
+(1/1) 正在检查文件冲突                                      [################################] 100%
+(1/1) 正在检查可用存储空间                                  [################################] 100%
+:: 正在运行事务前钩子函数...
+(1/1) Performing snapper pre snapshots for the following configurations...
+==> root: 536
+:: 正在处理软件包的变化...
+(1/1) 正在安装 terraform                                    [################################] 100%
+terraform 的可选依赖
+    diffutils: for running `terraform fmt -diff` [已安装]
+:: 正在运行事务后钩子函数...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Performing snapper post snapshots for the following configurations...
+==> root: 537
+󰪢 7s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName' --output table。
+Note: AWS CLI version 2, the latest major version of the AWS CLI, is now stable and recommended for general use. For more information, see the AWS CLI version 2 installation instructions at: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument --output: Invalid choice, valid choices are:
+
+json                                     | text
+table
+
+
+Invalid choice: 'table。', maybe you meant:
+
+  * table
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName' --output table
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName' --output table
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    服务抵扣金额 信息
+      兑换积分
+
+      服务抵扣金额
+
+      非活动积分的过去 6 个月
+      摘要
+      剩余总金额
+      US$109.13
+      已用总金额
+      US$10.87
+      活动积分
+      2
+      活动积分 (2) 信息
+
+      1
+
+
+      服务抵扣金额名称
+      已发放的服务抵扣金
+      到期日期
+      已用金额
+      剩余金额
+      适用的产品
+      服务抵扣金额名称
+      已发放的服务抵扣金
+      到期日期
+      已用金额
+      剩余金额
+      适用的产品
+      Explore AWS: Launch an instance using EC2
+      US$20.00
+      2026/07/20
+      US$0.00
+      US$20.00
+      查看完整服务列表
+      AWS Free Tier
+      US$100.00
+      2026/07/20
+      US$10.87
+      US$89.13
+      查看完整服务列表
+fish: 未知的命令：服务抵扣金额
+fish: 未知的命令：兑换积分
+fish:
+兑换积分
+^~~~~~~^
+fish: 未知的命令：服务抵扣金额
+fish:
+服务抵扣金额
+^~~~~~~~~~~^
+fish: 未知的命令：非活动积分的过去
+fish:
+非活动积分的过去 6 个月
+^~~~~~~~~~~~~~~^
+fish: 未知的命令：摘要
+fish:
+摘要
+^~~^
+fish: 未知的命令：剩余总金额
+fish:
+剩余总金额
+^~~~~~~~~^
+fish: 展开后的命令为空。
+US$109.13
+^~~~~~~~^
+fish: 未知的命令：已用总金额
+fish:
+已用总金额
+^~~~~~~~~^
+fish: 展开后的命令为空。
+US$10.87
+^~~~~~~^
+fish: 未知的命令：活动积分
+fish:
+活动积分
+^~~~~~~^
+fish: 未知的命令：2
+fish:
+2
+^
+fish: 未知的命令：2
+在命令替换中
+fish: 未知的命令
+活动积分 (2) 信息
+         ^~^
+fish: 未知的命令：1
+fish:
+1
+^
+fish: 未知的命令：服务抵扣金额名称
+fish:
+服务抵扣金额名称
+^~~~~~~~~~~~~~~^
+fish: 未知的命令：已发放的服务抵扣金
+fish:
+已发放的服务抵扣金
+^~~~~~~~~~~~~~~~~^
+fish: 未知的命令：到期日期
+fish:
+到期日期
+^~~~~~~^
+fish: 未知的命令：已用金额
+fish:
+已用金额
+^~~~~~~^
+fish: 未知的命令：剩余金额
+fish:
+剩余金额
+^~~~~~~^
+fish: 未知的命令：适用的产品
+fish:
+适用的产品
+^~~~~~~~~^
+fish: 未知的命令：服务抵扣金额名称
+fish:
+服务抵扣金额名称
+^~~~~~~~~~~~~~~^
+fish: 未知的命令：已发放的服务抵扣金
+fish:
+已发放的服务抵扣金
+^~~~~~~~~~~~~~~~~^
+fish: 未知的命令：到期日期
+fish:
+到期日期
+^~~~~~~^
+fish: 未知的命令：已用金额
+fish:
+已用金额
+^~~~~~~^
+fish: 未知的命令：剩余金额
+fish:
+剩余金额
+^~~~~~~^
+fish: 未知的命令：适用的产品
+fish:
+适用的产品
+^~~~~~~~~^
+fish: 未知的命令：Explore
+fish:
+Explore AWS: Launch an instance using EC2
+^~~~~~^
+fish: 展开后的命令为空。
+US$20.00
+^~~~~~~^
+fish: 未知的命令：2026/07/20
+fish:
+2026/07/20
+^~~~~~~~~^
+fish: 展开后的命令为空。
+US$0.00
+^~~~~~^
+fish: 展开后的命令为空。
+US$20.00
+^~~~~~~^
+fish: 未知的命令：查看完整服务列表
+fish:
+查看完整服务列表
+^~~~~~~~~~~~~~~^
+fish: 未知的命令：AWS
+fish:
+AWS Free Tier
+^~^
+fish: 展开后的命令为空。
+US$100.00
+^~~~~~~~^
+fish: 未知的命令：2026/07/20
+fish:
+2026/07/20
+^~~~~~~~~^
+fish: 展开后的命令为空。
+US$10.87
+^~~~~~~^
+fish: 展开后的命令为空。
+US$89.13
+^~~~~~~^
+fish: 未知的命令：查看完整服务列表
+fish:
+查看完整服务列表
+^~~~~~~~~~~~~~~^
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName' --output table
+󰪢 2s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 create-key-pair \
+              --key-name devops-day08-key \
+              --query 'KeyMaterial' \
+              --output text > ~/devops-day08-key.pem
+󰪢 1s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    chmod 400 ~/devops-day08-key.pem
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName' --output table
+----------------------
+|  DescribeKeyPairs  |
++--------------------+
+|  devops-day08-key  |
++--------------------+
+󰪢 1s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 create-security-group \
+              --group-name "DevOps-Web-SG" \
+              --description "Security group for Day 08 Web Server"
+{
+    "GroupId": "sg-0842939af501b7687",
+    "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:073501678492:security-group/sg-0842939af501b7687"
+}
+󰪢 1s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 authorize-security-group-ingress \
+              --group-id <sg-0842939af501b7687> \
+              --protocol tcp \
+              --port 22 \
+              --cidr 0.0.0.0/0
+warning: An error occurred while redirecting file 'sg-0842939af501b7687'
+warning: Path 'sg-0842939af501b7687' does not exist
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 authorize-security-group-ingress \
+              --group-id < sg-0842939af501b7687 > \
+              --protocol tcp \
+              --port 22 \
+              --cidr 0.0.0.0/0
+warning: An error occurred while redirecting file 'sg-0842939af501b7687'
+warning: Path 'sg-0842939af501b7687' does not exist
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 authorize-security-group-ingress \
+              --group-id sg-0842939af501b7687 \
+              --protocol tcp \
+              --port 22 \
+              --cidr 0.0.0.0/0
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-0b62fb5523b69d7e1",
+            "GroupId": "sg-0842939af501b7687",
+            "GroupOwnerId": "073501678492",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 22,
+            "ToPort": 22,
+            "CidrIpv4": "0.0.0.0/0",
+            "SecurityGroupRuleArn": "arn:aws:ec2:ap-northeast-1:073501678492:security-group-rule/sgr-0b62fb5523b69d7e1"
+        }
+    ]
+}
+󰪢 1s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 authorize-security-group-ingress \
+              --group-id sg-0842939af501b7687 \
+              --protocol tcp \
+              --port 80 \
+              --cidr 0.0.0.0/0
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-0c35fda6bfdf1537e",
+            "GroupId": "sg-0842939af501b7687",
+            "GroupOwnerId": "073501678492",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 80,
+            "ToPort": 80,
+            "CidrIpv4": "0.0.0.0/0",
+            "SecurityGroupRuleArn": "arn:aws:ec2:ap-northeast-1:073501678492:security-group-rule/sgr-0c35fda6bfdf1537e"
+        }
+    ]
+}
+󰪢 1s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-images \
+              --owners 099720109477 \
+              --filters "Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*" \
+              --query 'sort_by(Images, &CreationDate)[-1].ImageId' \
+              --output text
+ami-0f8faa29480e7e6de
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 run-instances \
+              --image-id ami-0f8faa29480e7e6de \
+              --count 1 \
+              --instance-type t2.micro \
+              --key-name devops-day08-key \
+              --security-group-ids sg-0842939af501b7687 \
+              --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=DevOps-Day08-Server}]'
+{
+    "ReservationId": "r-0c3e50181750af8d5",
+    "OwnerId": "073501678492",
+    "Groups": [],
+    "Instances": [
+        {
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "bb4dd9b7-be16-4287-a6ae-defc78b6fb56",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2026-03-16T13:08:41.000Z",
+                        "AttachmentId": "eni-attach-0e428ed5006703e85",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching",
+                        "NetworkCardIndex": 0
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupId": "sg-0842939af501b7687",
+                            "GroupName": "DevOps-Web-SG"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "06:63:ef:bf:eb:e5",
+                    "NetworkInterfaceId": "eni-0c4c4a83820b154a4",
+                    "OwnerId": "073501678492",
+                    "PrivateDnsName": "ip-172-31-40-208.ap-northeast-1.compute.internal",
+                    "PrivateIpAddress": "172.31.40.208",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-40-208.ap-northeast-1.compute.internal",
+                            "PrivateIpAddress": "172.31.40.208"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-04c0399437378d0f0",
+                    "VpcId": "vpc-04cb43b67a62a3dbc",
+                    "InterfaceType": "interface",
+                    "Operator": {
+                        "Managed": false
+                    }
+                }
+            ],
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupId": "sg-0842939af501b7687",
+                    "GroupName": "DevOps-Web-SG"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "DevOps-Day08-Server"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "required",
+                "HttpPutResponseHopLimit": 2,
+                "HttpEndpoint": "enabled",
+                "HttpProtocolIpv6": "disabled",
+                "InstanceMetadataTags": "disabled"
+            },
+            "EnclaveOptions": {
+                "Enabled": false
+            },
+            "BootMode": "uefi-preferred",
+            "PrivateDnsNameOptions": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "MaintenanceOptions": {
+                "AutoRecovery": "default",
+                "RebootMigration": "default"
+            },
+            "CurrentInstanceBootMode": "legacy-bios",
+            "Operator": {
+                "Managed": false
+            },
+            "InstanceId": "i-0cfb84f80955b4f15",
+            "ImageId": "ami-0f8faa29480e7e6de",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "PrivateDnsName": "ip-172-31-40-208.ap-northeast-1.compute.internal",
+            "PublicDnsName": "",
+            "StateTransitionReason": "",
+            "KeyName": "devops-day08-key",
+            "AmiLaunchIndex": 0,
+            "ProductCodes": [],
+            "InstanceType": "t2.micro",
+            "LaunchTime": "2026-03-16T13:08:41.000Z",
+            "Placement": {
+                "AvailabilityZoneId": "apne1-az4",
+                "GroupName": "",
+                "Tenancy": "default",
+                "AvailabilityZone": "ap-northeast-1a"
+            },
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "SubnetId": "subnet-04c0399437378d0f0",
+            "VpcId": "vpc-04cb43b67a62a3dbc",
+            "PrivateIpAddress": "172.31.40.208"
+        }
+    ]
+}
+󰪢 2s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 describe-instances \
+              --filters "Name=instance-state-name,Values=running" "Name=tag:Name,Values=DevOps-Day08-Server" \
+              --query 'Reservations[*].Instances[*].PublicIpAddress' \
+              --output text
+13.112.12.20
+󰪢 2s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    ssh -i ~/devops-day08-key.pem ubuntu@13.112.12.20
+The authenticity of host '13.112.12.20 (13.112.12.20)' can't be established.
+ED25519 key fingerprint is: SHA256:fc3OBBfUu0I6NPYHSU8IYvUWspZqEiZ3xxNth7TavW0
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '13.112.12.20' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-1007-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Mar 16 13:10:05 UTC 2026
+
+  System load:  0.63              Processes:             110
+  Usage of /:   26.4% of 6.71GB   Users logged in:       0
+  Memory usage: 23%               IPv4 address for enX0: 172.31.40.208
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-40-208:~$ uname --all
+Linux ip-172-31-40-208 6.17.0-1007-aws #7~24.04.1-Ubuntu SMP Thu Jan 22 21:04:49 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+ubuntu@ip-172-31-40-208:~$ sudo apt update && sudo apt install nginx -y
+Hit:1 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:6 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:7 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:8 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:10 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:11 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:12 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:13 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1837 kB]
+Get:14 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [336 kB]
+Get:15 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [177 kB]
+Get:16 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [16.7 kB]
+Get:17 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1566 kB]
+Get:18 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [319 kB]
+Get:19 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [386 kB]
+Get:20 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [33.0 kB]
+Get:21 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2819 kB]
+Get:22 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [652 kB]
+Get:23 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:24 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [32.1 kB]
+Get:25 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [7044 B]
+Get:26 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:27 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [496 B]
+Get:28 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.4 kB]
+Get:29 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9208 B]
+Get:30 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7384 B]
+Get:31 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:32 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [30.7 kB]
+Get:33 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [18.2 kB]
+Get:34 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [13.2 kB]
+Get:35 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1480 B]
+Get:36 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [212 B]
+Get:37 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:38 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [780 B]
+Get:39 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse Translation-en [372 B]
+Get:40 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:41 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:42 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1538 kB]
+Get:43 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [246 kB]
+Get:44 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [10.5 kB]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [976 kB]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [219 kB]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [20.8 kB]
+Get:50 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2677 kB]
+Get:51 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [622 kB]
+Get:52 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:53 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [28.8 kB]
+Get:54 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [6732 B]
+Get:55 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:56 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [396 B]
+Fetched 40.7 MB in 8s (5244 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+4 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 4 not upgraded.
+Need to get 565 kB of archives.
+After this operation, 1596 kB of additional disk space will be used.
+Get:1 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx-common all 1.24.0-2ubuntu7.6 [43.5 kB]
+Get:2 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx amd64 1.24.0-2ubuntu7.6 [521 kB]
+Fetched 565 kB in 0s (12.8 MB/s)
+Preconfiguring packages ...
+Selecting previously unselected package nginx-common.
+(Reading database ... 72566 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7.6_all.deb ...
+Unpacking nginx-common (1.24.0-2ubuntu7.6) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7.6_amd64.deb ...
+Unpacking nginx (1.24.0-2ubuntu7.6) ...
+Setting up nginx-common (1.24.0-2ubuntu7.6) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr/lib/systemd/system/nginx.service.
+Setting up nginx (1.24.0-2ubuntu7.6) ...
+ * Upgrading binary nginx
+   ...done.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ufw (0.36.2-6) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-40-208:~$ systemctl status ngnix
+WARNING: terminal is not fully functional
+Press RETURN to continue
+Unit ngnix.service could not be found.
+ubuntu@ip-172-31-40-208:~$ systemctl status nginx
+WARNING: terminal is not fully functional
+Press RETURN to continue
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2026-03-16 13:14:04 UTC; 49s ago
+       Docs: man:nginx(8)
+    Process: 1659 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited>
+    Process: 1661 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=>
+   Main PID: 1688 (nginx)
+      Tasks: 2 (limit: 1117)
+     Memory: 1.7M (peak: 3.6M)
+        CPU: 18ms
+     CGroup: /system.slice/nginx.service
+             ├─1688 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             └─1690 "nginx: worker process"
+
+Mar 16 13:14:04 ip-172-31-40-208 systemd[1]: Starting nginx.service - A high performance web serve>
+Mar 16 13:14:04 ip-172-31-40-208 systemd[1]: Started nginx.service - A high performance web server>
+ubuntu@ip-172-31-40-208:~$ exit
+logout
+Connection to 13.112.12.20 closed.
+󰪢 5m50s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    curl http://13.112.12.20
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+󰪢 1s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    scp -i ~/devops-day08-key.pem ubuntu@13.112.12.20:/var/log/nginx/access.log ./cloud-nginx-access.log
+access.log                                                       100%   91     0.1KB/s   00:01
+󰪢 21s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    cat ./cloud-nginx-access.log
+185.184.223.23 - - [16/Mar/2026:13:16:30 +0000] "GET / HTTP/1.1" 200 615 "-" "curl/8.19.0"
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    INSTANCE_ID=$(aws ec2 describe-instances --filters "Name=tag:Name,Values=DevOps-Day08-Server"
+ --query 'Reservations[*].Instances[*].InstanceId' --output text)
+fish: 不支持使用 '='。在 fish 中，请使用 'set INSTANCE_ID $(aws ec2 describe-instances --filters "Name=tag:Name,Values=DevOps-Day08-Server" --query 'Reservations[*].Instances[*].InstanceId' --output text)'。
+
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    set INSTANCE_ID (aws ec2 describe-instances --filters "Name=tag:Name,Values=DevOps-Day08-Server" --query 'Reservations[*].Instances[*].InstanceId' --output text)
+󰪢 2s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    echo $INSTANCE_ID
+i-0cfb84f80955b4f15
+󰪢 0s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    aws ec2 terminate-instances --instance-ids $INSTANCE_ID
+{
+    "TerminatingInstances": [
+        {
+            "InstanceId": "i-0cfb84f80955b4f15",
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+󰪢 1s 󰜥 󰉋  ••/90DaysfDevOps 󰜥 󰘬 master
+    ls
+󰡯 --protocol   2026                                       CONTRIBUTING.md       󰂺 README.md
+ 2023         a-gemini-a-day-keep-the-teacher-away.txt   Learning_Progress.md   scripts
+ 2024         AGENTS.md                                  LICENSE                TOC.md
+ 2025         cloud-nginx-access.log                     LICENSE.md
