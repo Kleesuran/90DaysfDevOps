@@ -1,0 +1,47 @@
+podman run -it --name my-arch archlinux:latest 
+[root@cb6a902b3d5a /]# sudo groupadd dev
+bash: sudo: command not found
+[root@cb6a902b3d5a /]# groupadd dev
+[root@cb6a902b3d5a /]# useradd -m -s /bin/bash coder1
+[root@cb6a902b3d5a /]# useradd -m -s /bin/bash coder2
+[root@cb6a902b3d5a /]# usermod -aG dev coder1
+[root@cb6a902b3d5a /]# usermod -aG dev coder2
+[root@cb6a902b3d5a /]# mkdir -p /var/shared-code
+[root@cb6a902b3d5a /]# chgrp dev /var/shared-code/
+[root@cb6a902b3d5a /]# chmod 775 /var/shared-code/
+[root@cb6a902b3d5a /]# su coder1
+[coder1@cb6a902b3d5a /]$ touch /var/shared-code/project_start.txt
+[coder1@cb6a902b3d5a /]$ su coder2
+Password: 
+[coder1@cb6a902b3d5a /]$ su
+Password: 
+unix_chkpwd[17]: password check failed for user (root)
+su: Authentication failure
+[coder1@cb6a902b3d5a /]$ ^C
+[coder1@cb6a902b3d5a /]$ exit
+exit
+[root@cb6a902b3d5a /]# su coder2
+[coder2@cb6a902b3d5a /]$ cat /var/shared-code/project_start.txt 
+[coder2@cb6a902b3d5a /]$ echo "coder2 is ready!" > /var/shared-code/project_start.txt 
+bash: /var/shared-code/project_start.txt: Permission denied
+[coder2@cb6a902b3d5a /]$ exit
+exit
+[root@cb6a902b3d5a /]# su coder1
+[coder1@cb6a902b3d5a /]$ chmod 664 /var/shared-code/project_start.txt
+[coder1@cb6a902b3d5a /]$ touch /var/shared-code/project_end.txt
+[coder1@cb6a902b3d5a /]$ exit
+exit
+[root@cb6a902b3d5a /]# su coder2
+[coder2@cb6a902b3d5a /]$ rm /var/shared-code/project_end.txt 
+rm: remove write-protected regular empty file '/var/shared-code/project_end.txt'? yes
+[coder2@cb6a902b3d5a /]$ echo "It's Mine Now!" > /var/shared-code/project_end.txt 
+[coder2@cb6a902b3d5a /]$ ls -l /var/shared-code/
+total 4
+-rw-r--r-- 1 coder2 coder2 15 Mar 16 14:40 project_end.txt
+-rw-rw-r-- 1 coder1 coder1  0 Mar 16 14:32 project_start.txt
+[coder2@cb6a902b3d5a /]$ exit
+exit
+[root@cb6a902b3d5a /]# rxit
+bash: rxit: command not found
+[root@cb6a902b3d5a /]# exit
+exit
