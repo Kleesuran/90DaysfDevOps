@@ -22,7 +22,7 @@
 - [ ] Day-20：Bash 综合挑战：开发一个自动化的日志分析器与每日运行状态报告生成器。
 - [ ] Day-21：脚本专家之路：整理个人 Shell 脚本高级速查表，涵盖文本处理与调试技巧。
 - [x] Day-22：Git 版本控制基础：初始化仓库、理解暂存区概念并管理本地代码历史。
-- [ ] Day-23：Git 分支管理与协作：实战分支创建、切换、推送远程仓库及 Fork/Clone 区别。
+- [x] Day-23：Git 分支管理与协作：实战分支创建、切换、推送远程仓库及 Fork/Clone 区别。
 - [ ] Day-24：Git 进阶操作：掌握 Merge、Rebase、Stash 暂存与 Cherry-pick 择优挑选。
 - [ ] Day-25：Git 撤销与策略：深入理解 Reset/Revert 区别，学习 GitFlow 等企业级分支模型。
 - [ ] Day-26：GitHub CLI（gh）：使用命令行工具高效管理 Pull Request、Issues 与代码库。
