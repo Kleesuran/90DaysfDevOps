@@ -49,3 +49,7 @@
 - [ ] Day-47：高级事件驱动：深入 PR 生命周期事件、Cron 定时任务与事件驱动型流水线。
 - [ ] Day-48：CI/CD 综合大项目：构建从代码测试、镜像构建到多环境部署的端到端完整流水线。
 - [ ] Day-49：DevSecOps 安全集成：在流水线中集成 Trivy 镜像扫描与依赖库安全性审计。
+- [ ] Day-50：Kubernetes 架构与集群搭建：理解控制平面组件，并使用 Minikube 或 Kubeadm 搭建你的第一个集群。
+- [ ] Day-51：K8s 资源清单与 Pod 初探：掌握 YAML 定义文件，运行并管理你的第一个 Pod。
+- [ ] Day-52：资源隔离与部署策略：掌握 Namespaces 管理及 Deployments 的创建、滚动更新与回滚。
+- [ ] Day-53：K8s 服务发现与负载均衡：实战 ClusterIP、NodePort 与 LoadBalancer，揭秘容器间通信。
