@@ -12,9 +12,9 @@
 - [x] Day-10：文件权限与操作进阶：深度掌握 chmod、chown 及基本文件处理技巧。
 - [x] Day-11：文件所有权深度挑战：递归管理（chown -R）与复杂环境下的所有权审计。
 - [x] Day-12：第一阶段复盘：巩固 Linux 基础、进程管理、权限与用户管理的阶段性知识。
-- [ ] Day-13：Linux 逻辑卷管理（LVM）：实战物理卷、卷组与逻辑卷的创建、挂载与动态扩容。
-- [ ] Day-14：网络基础实战：深入 OSI/TCP-IP 模型，使用 ping、ss、dig 进行网络连通性诊断。
-- [ ] Day-15：网络进阶：理解 DNS 解析原理、CIDR 子网划分以及常用服务端口协议。
+- [x] Day-13：Linux 逻辑卷管理（LVM）：实战物理卷、卷组与逻辑卷的创建、挂载与动态扩容。
+- [x] Day-14：网络基础实战：深入 OSI/TCP-IP 模型，使用 ping、ss、dig 进行网络连通性诊断。
+- [x] Day-15：网络进阶：理解 DNS 解析原理、CIDR 子网划分以及常用服务端口协议。
 - [ ] Day-16：Shell 脚本入门：掌握 Shebang、变量定义、用户输入（read）与基础逻辑判断。
 - [ ] Day-17：脚本逻辑控制：实战 For/While 循环、位置参数处理与基础错误处理（set -e）。
 - [ ] Day-18：高效脚本编写：掌握 Shell 函数、局部变量与工业级安全规范（set -euo pipefail）。
@@ -23,13 +23,13 @@
 - [ ] Day-21：脚本专家之路：整理个人 Shell 脚本高级速查表，涵盖文本处理与调试技巧。
 - [x] Day-22：Git 版本控制基础：初始化仓库、理解暂存区概念并管理本地代码历史。
 - [x] Day-23：Git 分支管理与协作：实战分支创建、切换、推送远程仓库及 Fork/Clone 区别。
-- [ ] Day-24：Git 进阶操作：掌握 Merge、Rebase、Stash 暂存与 Cherry-pick 择优挑选。
-- [ ] Day-25：Git 撤销与策略：深入理解 Reset/Revert 区别，学习 GitFlow 等企业级分支模型。
-- [ ] Day-26：GitHub CLI（gh）：使用命令行工具高效管理 Pull Request、Issues 与代码库。
-- [ ] Day-27：开发者品牌建设：打磨 GitHub Profile 个人主页，优化仓库组织与项目文档。
+- [x] Day-24：Git 进阶操作：掌握 Merge、Rebase、Stash 暂存与 Cherry-pick 择优挑选。
+- [x] Day-25：Git 撤销与策略：深入理解 Reset/Revert 区别，学习 GitFlow 等企业级分支模型。
+- [x] Day-26：GitHub CLI（gh）：使用命令行工具高效管理 Pull Request、Issues 与代码库。
+- [x] Day-27：开发者品牌建设：打磨 GitHub Profile 个人主页，优化仓库组织与项目文档。
 - [ ] Day-28：第二阶段复盘：全面复习 Linux 网络、LVM、Shell 脚本编程与 Git 协作体系。
-- [ ] Day-29：Docker 容器化初探：理解容器 vs 虚拟机差异，运行并探索你的第一个镜像。
-- [ ] Day-30：容器生命周期管理：深入镜像分层（Layers）原理，掌握容器全生命周期控制。
+- [x] Day-29：Docker 容器化初探：理解容器 vs 虚拟机差异，运行并探索你的第一个镜像。
+- [x] Day-30：容器生命周期管理：深入镜像分层（Layers）原理，掌握容器全生命周期控制。
 - [ ] Day-31：Dockerfile 实战：编写高效镜像构建文件，掌握常用指令与构建缓存优化。
 - [ ] Day-32：容器持久化与网络：实战 Docker Volumes 数据持久化与自定义网络通信。
 - [ ] Day-33：Docker Compose 基础：使用 YAML 编排多容器应用，实现服务一键启动。
@@ -53,3 +53,22 @@
 - [ ] Day-51：K8s 资源清单与 Pod 初探：掌握 YAML 定义文件，运行并管理你的第一个 Pod。
 - [ ] Day-52：资源隔离与部署策略：掌握 Namespaces 管理及 Deployments 的创建、滚动更新与回滚。
 - [ ] Day-53：K8s 服务发现与负载均衡：实战 ClusterIP、NodePort 与 LoadBalancer，揭秘容器间通信。
+- [ ] Day-54：Kubernetes 配置管理：深入实战 ConfigMaps 与 Secrets，实现应用配置与敏感数据的解耦。
+- [ ] Day-55：K8s 持久化存储：掌握 Persistent Volumes (PV) 与 Claims (PVC)，确保容器数据的永久留存。
+- [ ] Day-56：有状态应用管理：理解 StatefulSets 核心概念，实战部署具有持久标识符的数据库集群。
+- [ ] Day-57：资源调度与健康检查：设置 Resource Requests/Limits 并配置探针（Probes）保障服务高可用。
+- [ ] Day-58：集群监控与自动扩容：部署 Metrics Server 并实战水平 Pod 自动扩容 (HPA) 应对流量峰值。
+- [ ] Day-59：Helm 包管理器入门：学习 Kubernetes 的“软件包管理器”，掌握 Chart 结构与应用版本控制。
+- [ ] Day-60：K8s 综合实战：在集群中端到端部署经典的 WordPress + MySQL 生产级架构。
+- [ ] Day-61：Terraform 基础设施即代码：初探 IaC 理念，编写并启动你的第一个 AWS 云基础设施。
+- [ ] Day-62：Terraform 核心组件：深入理解 Providers、Resources 声明以及资源间的依赖关系管理。
+- [ ] Day-63：Terraform 动态配置：实战 Variables、Outputs 与 Data Sources，让你的代码更具通用性.
+- [ ] Day-64：状态管理与远程后端：理解 Terraform State 的重要性，配置 S3 远程后端实现团队协作。
+- [ ] Day-65：Terraform 模块化开发：学习构建可重用的 Modules，实现基础设施的标准化与规模化。
+- [ ] Day-66：云原生集群自动化：利用 Terraform 模块在 AWS 上自动化部署生产级 EKS 集群。
+- [ ] Day-67：TerraWeek 综合挑战：利用 Workspaces 与模块化技术构建多环境基础设施架构。
+- [ ] Day-68：Ansible 自动化运维入门：理解 Agentless 架构，配置 Inventory 清单实现多主机管理。
+- [ ] Day-69：Ansible Playbooks 实战：编写剧本 (Playbooks) 与常用模块，实现服务器配置的标准化。
+- [ ] Day-70：Ansible 逻辑控制：掌握变量、Facts、条件判断与循环结构，编写更智能的自动化任务。
+- [ ] Day-71：Ansible 高级进阶：利用 Roles、Galaxy、Templates 与 Vault 保护敏感信息并实现代码复用。
+- [ ] Day-72：Ansible 综合大项目：自动化部署 Docker 与 Nginx，实现端到端的 Web 服务环境交付。
