@@ -72,3 +72,15 @@
 - [ ] Day-70：Ansible 逻辑控制：掌握变量、Facts、条件判断与循环结构，编写更智能的自动化任务。
 - [ ] Day-71：Ansible 高级进阶：利用 Roles、Galaxy、Templates 与 Vault 保护敏感信息并实现代码复用。
 - [ ] Day-72：Ansible 综合大项目：自动化部署 Docker 与 Nginx，实现端到端的 Web 服务环境交付。
+- [ ] Day-73：可观测性入门：理解指标、日志与追踪三大支柱，实战部署 Prometheus 并掌握基础查询。
+- [ ] Day-74：监控可视化进阶：实战 Node Exporter 与 cAdvisor，利用 Grafana 构建主机与容器监控大盘。
+- [ ] Day-75：日志管理实战：学习 Loki 与 Promtail 架构，实现云原生环境下的日志聚合与自动化采集。
+- [ ] Day-76：告警系统与 OpenTelemetry：初探观测性标准，实战配置 Prometheus 告警规则实现全链路监控。
+- [ ] Day-77：观测性项目：在 Docker Compose 中构建全栈监控链路，实现从指标到日志的完整观测闭环。
+- [ ] Day-78：Helm 包管理器基础：掌握 Kubernetes 应用打包机制，实战 Helm 安装、Repo 管理与常用指令。
+- [ ] Day-79：自定义 Chart 实战：为 AI-BankApp 编写 Helm 模板，掌握 Values 注入与多组件编排技巧。
+- [ ] Day-80：Helm 进阶项目：实战多环境部署与 CI/CD 流水线集成，优化 K8s 资源配额与 Lint 检查。
+- [ ] Day-81：Amazon EKS 自动化：利用 Terraform 部署生产级集群，掌握 AWS CLI 配置与集群基础审计。
+- [ ] Day-82：EKS 网络与存储：实战 Gateway API 流量管理，配置 EBS CSI 驱动实现数据库持久化留存。
+- [ ] Day-83：EKS 综合实战：在 AWS 上部署生产级 AI 银行应用，集成 HPA 自动扩容与全方位监控加固。
+
